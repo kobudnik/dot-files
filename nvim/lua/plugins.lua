@@ -12,7 +12,7 @@ packer.startup(function(use)
     'svrana/neosolarized.nvim',
     requires = { 'tjdevries/colorbuddy.nvim' }
   }
-  use 'nvim-tree/nvim-web-devicons'   -- File icons
+  use 'nvim-tree/nvim-web-devicons' -- File icons
 
   use {
     'nvim-lualine/lualine.nvim',
@@ -34,7 +34,9 @@ packer.startup(function(use)
     'nvim-treesitter/nvim-treesitter',
     run = function() require('nvim-treesitter.install').update({ with_sync = true }) end,
   }
-  use 'preservim/nerdtree'
+  use {
+    'preservim/nerdtree',
+  }
   use 'nvim-telescope/telescope.nvim'
   use 'nvim-telescope/telescope-file-browser.nvim'
   use 'windwp/nvim-autopairs'

@@ -10,10 +10,9 @@ keymap.set('n', '-', '<C-x>')
 keymap.set('n', 'dw', 'vb"_d')
 
 -- Select all
-keymap.set('n', '<C-a>', 'gg<S-v>G')
+keymap.set('n', '<S-a>', 'ggVG')
 
--- Save with root permission (not working for now)
---vim.api.nvim_create_user_command('W', 'w !sudo tee > /dev/null %', {})
+
 
 -- New tab
 keymap.set('n', 'te', ':tabedit')
@@ -32,7 +31,13 @@ keymap.set('', 'sj', '<C-w>j')
 keymap.set('', 'sl', '<C-w>l')
 
 -- Resize window
-keymap.set('n', '<C-w><left>', '<C-w><')
-keymap.set('n', '<C-w><right>', '<C-w>>')
-keymap.set('n', '<C-w><up>', '<C-w>+')
-keymap.set('n', '<C-w><down>', '<C-w>-')
+keymap.set('n', '<S><left>', '<C-w><')
+keymap.set('n', '<S><right>', '<C-w>>')
+keymap.set('n', '<S><up>', '<C-w>+')
+keymap.set('n', '<S><down>', '<C-w>-')
+
+-- Open NERDTree
+keymap.set('n', 'fs', ':NERDTreeToggle<CR>', { silent = true })
+
+-- Enter Visual Block Mode
+keymap.set('n', '<S-b>', '<C-v>')
