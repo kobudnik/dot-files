@@ -12,6 +12,12 @@ packer.startup(function(use)
     'svrana/neosolarized.nvim',
     requires = { 'tjdevries/colorbuddy.nvim' }
   }
+
+
+  use 'preservim/nerdtree' --nerdtree
+  use 'ryanoasis/vim-devicons'
+  use 'airblade/vim-gitgutter'
+  use 'Xuyuanp/nerdtree-git-plugin'
   use 'nvim-tree/nvim-web-devicons' -- File icons
 
   use {
@@ -33,9 +39,6 @@ packer.startup(function(use)
   use {
     'nvim-treesitter/nvim-treesitter',
     run = function() require('nvim-treesitter.install').update({ with_sync = true }) end,
-  }
-  use {
-    'preservim/nerdtree',
   }
   use 'nvim-telescope/telescope.nvim'
   use 'nvim-telescope/telescope-file-browser.nvim'
