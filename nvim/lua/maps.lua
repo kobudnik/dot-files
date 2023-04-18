@@ -9,8 +9,11 @@ keymap.set('n', '-', '<C-x>')
 -- Delete a word backwards
 keymap.set('n', 'dw', 'vb"_d')
 
+-- Select all w/ Shift
+--keymap.set('n', '<S-a>', 'ggVG')
+
 -- Select all
-keymap.set('n', '<S-a>', 'ggVG')
+keymap.set('n', '<C-a>', 'gg<S-v>G')
 
 
 
@@ -31,10 +34,10 @@ keymap.set('', 'sj', '<C-w>j')
 keymap.set('', 'sl', '<C-w>l')
 
 -- Resize window
-keymap.set('n', '<S><left>', '<C-w><')
-keymap.set('n', '<S><right>', '<C-w>>')
-keymap.set('n', '<S><up>', '<C-w>+')
-keymap.set('n', '<S><down>', '<C-w>-')
+keymap.set('n', '<C-w><left>', '<C-w><')
+keymap.set('n', '<C-w><right>', '<C-w>>')
+keymap.set('n', '<C-w><up>', '<C-w>+')
+keymap.set('n', '<C-w><down>', '<C-w>-')
 
 -- Open NERDTree
 keymap.set('n', 'fs', ':NERDTreeToggle<CR>', { silent = true })
