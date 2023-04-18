@@ -40,7 +40,7 @@ keymap.set('n', '<C-w><up>', '<C-w>+')
 keymap.set('n', '<C-w><down>', '<C-w>-')
 
 -- Open NERDTree
-keymap.set('n', 'fs', ':NERDTreeToggle<CR>', { silent = true })
+keymap.set('n', 'nt', ':NvimTreeToggle<CR>', { silent = true })
 
 -- Enter Visual Block Mode
 keymap.set('n', '<S-b>', '<C-v>')
