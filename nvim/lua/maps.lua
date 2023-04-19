@@ -43,3 +43,9 @@ keymap.set('n', '<C-b>', '<C-v>')
 
 --Enter Visual line Mode
 keymap.set('n', '<C-v>', '<S-v>')
+
+--Packer Commands
+keymap.set('n', 'up', ':PackerSync<CR>', { silent = true })
+
+--Change cwd to current buffer
+keymap.set('n', ';cd', ':lcd %:p:h<CR>')
