@@ -6,6 +6,7 @@ alias lsa "ls -a"
 alias stat "git status"
 alias ls "ls -p -G"
 alias log "git log"
+alias lg "lazygit"
 
 
 set -gx TERM xterm-256color

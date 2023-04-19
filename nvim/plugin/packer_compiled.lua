@@ -225,11 +225,6 @@ _G.packer_plugins = {
     path = "/Users/kbud93/.local/share/nvim/site/pack/packer/start/telescope.nvim",
     url = "https://github.com/nvim-telescope/telescope.nvim"
   },
-  ["vim-devicons"] = {
-    loaded = true,
-    path = "/Users/kbud93/.local/share/nvim/site/pack/packer/start/vim-devicons",
-    url = "https://github.com/ryanoasis/vim-devicons"
-  },
   ["vim-gitgutter"] = {
     loaded = true,
     path = "/Users/kbud93/.local/share/nvim/site/pack/packer/start/vim-gitgutter",

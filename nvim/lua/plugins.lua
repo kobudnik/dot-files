@@ -13,9 +13,8 @@ packer.startup(function(use)
     requires = { 'tjdevries/colorbuddy.nvim' }
   }
 
-  use 'ryanoasis/vim-devicons'
+
   use 'airblade/vim-gitgutter'
-  use 'Xuyuanp/nerdtree-git-plugin'
   use {
     'nvim-tree/nvim-tree.lua',
     requires = {
