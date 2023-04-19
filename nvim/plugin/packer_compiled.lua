@@ -144,11 +144,6 @@ _G.packer_plugins = {
     path = "/Users/kbud93/.local/share/nvim/site/pack/packer/start/neosolarized.nvim",
     url = "https://github.com/svrana/neosolarized.nvim"
   },
-  ["nerdtree-git-plugin"] = {
-    loaded = true,
-    path = "/Users/kbud93/.local/share/nvim/site/pack/packer/start/nerdtree-git-plugin",
-    url = "https://github.com/Xuyuanp/nerdtree-git-plugin"
-  },
   ["null-ls.nvim"] = {
     loaded = true,
     path = "/Users/kbud93/.local/share/nvim/site/pack/packer/start/null-ls.nvim",
