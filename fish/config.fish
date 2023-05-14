@@ -7,6 +7,7 @@ alias stat "git status"
 alias ls "ls -p -G"
 alias log "git log"
 alias lg "lazygit"
+alias python "python3"
 
 set -gx TERM xterm-256color
 

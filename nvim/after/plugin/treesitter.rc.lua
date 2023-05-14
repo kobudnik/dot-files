@@ -18,11 +18,13 @@ ts.setup {
     "fish",
     "php",
     "json",
+    "java",
     "yaml",
     "swift",
     "css",
     "html",
     "javascript",
+    "python",
     "lua"
   },
   autotag = {
