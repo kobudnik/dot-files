@@ -30,19 +30,26 @@ keymap.set('', 'sj', '<C-w>j')
 keymap.set('', 'sl', '<C-w>l')
 
 -- Resize window
-keymap.set('n', '<C-w><left>', '<C-w><')
-keymap.set('n', '<C-w><right>', '<C-w>>')
-keymap.set('n', '<C-w><up>', '<C-w>+')
-keymap.set('n', '<C-w><down>', '<C-w>-')
+keymap.set('n', ';1', '<C-w><')
+keymap.set('n', ';4', '<C-w>>')
+keymap.set('n', ';3', '<C-w>+')
+keymap.set('n', ';2', '<C-w>-')
 
--- Open NERDTree
+--New tab
+keymap.set('n', 'tn', ':tabnew<CR>')
+
+--Buffer list
+keymap.set('n', 'ls', ':ls<CR>')
+
+
+-- Open NvimTree
 keymap.set('n', '<C-f>', ':NvimTreeToggle<CR>', { silent = true })
 
 -- Enter Visual Block Mode
-keymap.set('n', '<C-b>', '<C-v>')
+keymap.set('n', '<S-b>', '<C-v>')
 
 --Enter Visual line Mode
-keymap.set('n', '<C-v>', '<S-v>')
+--keymap.set('n', '<C-v>', '<S-v>')
 
 --Packer Commands
 keymap.set('n', 'up', ':PackerSync<CR>', { silent = true })
