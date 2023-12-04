@@ -36,7 +36,12 @@ keymap.set('n', ';3', '<C-w>+')
 keymap.set('n', ';2', '<C-w>-')
 
 --New tab
-keymap.set('n', 'tn', ':tabnew<CR>')
+keymap.set('n', 'tt', ':tabnew<CR>')
+
+-- tab next
+keymap.set('n', 'tn', 'gt')
+--tab back
+keymap.set('n', 'tb', 'gT')
 
 --Buffer list
 keymap.set('n', 'ls', ':ls<CR>')
