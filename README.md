@@ -1,5 +1,4 @@
-### 1)
-- From home directory, cd into .config
+### 1) From home directory, cd into .config
 
 ### 2) clone this repository
 
